@@ -74,3 +74,24 @@ $(function(){
     });
 
 });
+
+// Получите все элементы, которым вы хотите добавить анимацию
+const elements = document.querySelectorAll('#anim');
+
+// Функция, которая будет проверять положение элементов при прокрутке
+function checkScroll() {
+  elements.forEach(element => {
+    // Получите положение элемента относительно верхней части окна
+    const elementPosition = element.getBoundingClientRect().top;
+
+    // Проверьте, находится ли элемент в пределах видимости окна
+    if (elementPosition < window.innerHeight) {
+      // Добавьте класс "slide-in-left" к элементу
+      element.classList.add('animation');
+    }
+  });
+}
+
+// Вызовите функцию checkScroll при загрузке страницы и при прокрутке
+window.addEventListener('load', checkScroll);
+window.addEventListener('scroll', checkScroll);

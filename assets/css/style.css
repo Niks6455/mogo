@@ -1640,4 +1640,153 @@ hr {
  
 }
 
+/* анимации 26.02.2024 */
+  .animation {
+    animation: slideInLeft 1s ease forwards;
+  }
+  #anim1Header{
+    animation: slideInLeft 1s ease forwards;
+    animation: slideRepeat 1s linear infinite;
+  }
+  #anim2Header{
+    animation: slideInright 1s ease forwards;
+  }
+  .card__item:nth-child(1).animation{
+    animation: slideInLeft 1s ease forwards!important;
 
+  }
+  .card__item:nth-child(2).animation{
+    animation: slideInbot 1s ease forwards!important;
+
+  }
+  .card__item:nth-child(3).animation{
+    animation: slideInright 1s ease forwards!important;
+  }
+  .stat__item:nth-child(5).animation{
+    animation: slideInLeft 0.4s ease forwards;
+  }
+  .stat__item:nth-child(4).animation{
+    animation: slideInLeft 0.7s ease forwards;
+  }
+  .stat__item:nth-child(3).animation{
+    animation: slideInLeft 1s ease forwards;
+  }
+  .stat__item:nth-child(2).animation{
+    animation: slideInLeft 1.3s ease forwards;
+  }
+  .stat__item:nth-child(1).animation{
+    animation: slideInLeft 1.6s ease forwards;
+  }
+  .services.animation{
+    animation: slideOpacity 2s linear forwards;
+  }
+  .devices__item:nth-child(1).animation{
+    animation: slideInLeft 1s ease forwards;
+
+  }
+  .devices__item:nth-child(2).animation{
+    animation: slideInright 1s ease forwards;
+  }
+  .wedo__img.animation{
+    animation: slideInLeft 1s ease forwards;
+  }
+  .accordion.animation{
+    animation: slideInright 1s ease forwards;
+  }
+  .card__item:nth-child(1).animation{
+    animation: slideInLeft 1s ease forwards;
+  }
+  .card__item:nth-child(2).animation{
+    animation: slideInbot 1s ease forwards;
+
+  }
+  .card__item:nth-child(3).animation{
+    animation: slideInright 1s ease forwards;
+  }
+
+  .logos__item:nth-child(1).animation{
+    animation: slideInLeft 1s ease forwards!important;
+  }
+  .logos__item:nth-child(6).animation{
+    animation: slideInright 1s ease forwards!important;
+  }
+  .logos__item:nth-child(2).animation,.logos__item:nth-child(3).animation,
+  .logos__item:nth-child(4).animation,.logos__item:nth-child(5).animation{
+    animation: slideInbot 1s ease forwards!important;
+  }
+  .works__col:nth-child(1).animation{
+    animation: slideInLeft 1s ease forwards!important;
+  }
+  .works__col:nth-child(2).animation{
+    animation: slideInbot 1s ease forwards!important;
+  }
+  .works__col:nth-child(3).animation{
+    animation: slideOpacity 1s ease forwards!important;
+  }
+  .works__col:nth-child(4).animation{
+    animation: slideInright 1s ease forwards!important;
+  }
+  .clients__item:nth-child(1).animation{
+    animation: slideInLeft 1s ease forwards!important;
+  }
+  .clients__item:nth-child(2).animation{
+    animation: slideInright 2s ease forwards!important;
+  }
+  .clients__item:nth-child(3).animation{
+    animation: slideInLeft 3s ease forwards!important;
+  }
+  .clients__item:nth-child(4).animation{
+    animation: slideInright 4s ease forwards!important;
+  }
+  .blog__item:nth-child(1).animation, .footer__col:nth-child(1).animation{
+    animation: slideInLeft 1s ease forwards!important;
+  }
+  .blog__item:nth-child(2).animation, .footer__col:nth-child(2).animation{
+    animation: slideInbot 1s ease forwards!important;
+  }
+  .blog__item:nth-child(3).animation, .footer__col:nth-child(3).animation{
+    animation: slideInright 1s ease forwards!important;
+  }
+  @keyframes slideRepeat {
+    0% {
+      transform: translateY(-25px);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    100%{
+        transform: translateY(-25px);
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideOpacity {
+    from {
+     opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slideInright {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInbot {
+    from {
+      transform: translateY(300%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }  
